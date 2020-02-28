@@ -1,0 +1,24 @@
+{
+  "name": "use-window-focus",
+  "version": "1.0.0",
+  "description": "React Hook to show if window is focused or not",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "files": [
+    "dist"
+  ],
+  "repository": "jpalumickas/use-window-focus",
+  "author": "Justas Palumickas",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.12.0-next.8",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "rimraf dist && microbundle build --no-compress -f modern,cjs",
+    "watch": "microbundle watch --no-compress"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
