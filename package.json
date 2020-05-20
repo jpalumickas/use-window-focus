@@ -8,10 +8,14 @@
     "dist"
   ],
   "repository": "jpalumickas/use-window-focus",
-  "author": "Justas Palumickas",
+  "author": {
+    "name": "Justas Palumickas",
+    "email": "jpalumickas@gmail.com",
+    "url": "jpalumickas.com"
+  },
   "license": "MIT",
   "devDependencies": {
-    "microbundle": "^0.12.0-next.9",
+    "microbundle": "^0.12.0",
     "rimraf": "^3.0.2"
   },
   "scripts": {
