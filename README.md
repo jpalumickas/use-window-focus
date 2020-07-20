@@ -19,7 +19,7 @@ export default () => {
 
   return (
     <div>
-      <span>{windowFocused ? 'Focused' : 'Not focused'}
+      <span>{windowFocused ? 'Focused' : 'Not focused'}</span>
     </div>
   );
 }
