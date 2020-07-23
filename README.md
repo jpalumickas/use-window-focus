@@ -1,4 +1,4 @@
-# use-window-focused
+# use-window-focus
 
 React Hook to show if window is focused or not
 
