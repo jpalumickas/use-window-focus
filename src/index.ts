@@ -9,7 +9,7 @@ const useWindowFocus = () => {
 
     const onFocus = () => setFocused(true);
     const onBlur = () => setFocused(false);
-    
+
     window.addEventListener('focus', onFocus);
     window.addEventListener('blur', onBlur);
 
