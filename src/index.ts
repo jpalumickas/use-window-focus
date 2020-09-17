@@ -4,7 +4,7 @@ const useWindowFocus = () => {
   const [focused, setFocused] = useState(false);
 
   useEffect(() => {
-    // first render
+    // First render
     setFocused(document.hasFocus());
 
     const onFocus = () => setFocused(true);
