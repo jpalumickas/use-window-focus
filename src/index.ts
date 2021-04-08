@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const hasFocus = () => typeof document !== "undefined" && document.hasFocus();
+const hasFocus = () => typeof document !== 'undefined' && document.hasFocus();
 
 const useWindowFocus = () => {
   const [focused, setFocused] = useState(hasFocus); // focus for first render
@@ -10,12 +10,12 @@ const useWindowFocus = () => {
 
     const checkFocus = () => setFocused(hasFocus());
 
-    window.addEventListener("focus", checkFocus);
-    window.addEventListener("blur", checkFocus);
+    window.addEventListener('focus', checkFocus);
+    window.addEventListener('blur', checkFocus);
 
     return () => {
-      window.removeEventListener("focus", checkFocus);
-      window.removeEventListener("blur", checkFocus);
+      window.removeEventListener('focus', checkFocus);
+      window.removeEventListener('blur', checkFocus);
     };
   }, []);
 
