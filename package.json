@@ -2,9 +2,9 @@
   "name": "use-window-focus",
   "version": "1.3.0",
   "description": "React Hook to show if window is focused or not",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "module": "dist/use-window-focus.esm.js",
+  "main": "dist/use-window-focus.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/use-window-focus.module.js",
   "files": [
     "dist",
     "src"
@@ -17,11 +17,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint src",
-    "prepare": "tsdx build && husky install"
+    "dev": "microbundle watch --jsx React.createElement",
+    "build": "rimraf dist && microbundle src/index.ts --jsx React.createElement",
+    "test": "jest",
+    "prepare": "husky install"
   },
   "peerDependencies": {
     "react": ">=16.8"
@@ -29,13 +28,18 @@
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "lint-staged": "^11.2.6",
+    "microbundle": "^0.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
-    "tsdx": "^0.14.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.7",
     "tslib": "^2.3.1",
     "typescript": "^4.4.4"
   },
@@ -44,6 +48,12 @@
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "engines": {
     "node": ">=12"
