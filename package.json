@@ -28,20 +28,20 @@
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
-    "@types/jest": "^27.0.2",
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
     "husky": "^7.0.4",
-    "jest": "^27.3.1",
-    "lint-staged": "^11.2.6",
-    "microbundle": "^0.14.1",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.1.5",
+    "microbundle": "^0.14.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
     "rimraf": "^3.0.2",
-    "ts-jest": "^27.0.7",
+    "ts-jest": "^27.1.2",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.4"
   },
   "prettier": {
     "printWidth": 80,
