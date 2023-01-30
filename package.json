@@ -1,6 +1,6 @@
 {
   "name": "use-window-focus",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "React Hook to show if window is focused or not",
   "main": "dist/use-window-focus.js",
   "types": "dist/index.d.ts",
