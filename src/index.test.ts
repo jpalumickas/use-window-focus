@@ -1,5 +1,5 @@
 import useWindowFocus from './index';
-import { renderHook, act } from '@testing-library/react-hooks';
+import { renderHook, act } from '@testing-library/react';
 
 const fireFocusEvent = () => {
   global.window.dispatchEvent(new Event('focus'));
