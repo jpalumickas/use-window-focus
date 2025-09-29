@@ -5,21 +5,20 @@ React Hook to show if window is focused or not
 ## Installation
 
 ```sh
-yarn add use-window-focus
+pnpm add use-window-focus
 ```
 
 ## Usage
 
 ```jsx
-import React from 'react';
 import useWindowFocus from 'use-window-focus';
 
-export default () => {
-  const windowFocused = useWindowFocus();
+export const App = () => {
+  const isWindowFocused = useWindowFocus();
 
   return (
     <div>
-      <span>{windowFocused ? 'Focused' : 'Not focused'}</span>
+      <span>{isWindowFocused ? 'Focused' : 'Not focused'}</span>
     </div>
   );
 }
