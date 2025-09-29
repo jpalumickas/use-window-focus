@@ -20,7 +20,7 @@
     "dev": "microbundle watch --jsx React.createElement",
     "build": "rimraf dist && microbundle src/index.ts --jsx React.createElement",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "peerDependencies": {
     "react": ">=16.8"
@@ -35,6 +35,7 @@
     "jest-environment-jsdom": "^30.2.0",
     "lint-staged": "^16.2.3",
     "microbundle": "^0.15.1",
+    "prettier": "^3.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-test-renderer": "^19.1.1",
