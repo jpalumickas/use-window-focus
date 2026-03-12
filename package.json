@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "microbundle watch --jsx React.createElement",
     "build": "rimraf dist && microbundle src/index.ts --jsx React.createElement",
-    "test": "jest",
+    "test": "vitest run",
     "prepare": "husky"
   },
   "peerDependencies": {
@@ -27,22 +27,19 @@
   },
   "devDependencies": {
     "@testing-library/react": "^16.3.2",
-    "@types/jest": "^30.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "husky": "^9.1.7",
-    "jest": "^30.3.0",
-    "jest-environment-jsdom": "^30.3.0",
+    "jsdom": "^28.1.0",
     "lint-staged": "^16.3.3",
     "microbundle": "^0.15.1",
     "prettier": "^3.8.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-test-renderer": "^19.2.4",
     "rimraf": "^6.1.3",
-    "ts-jest": "^29.4.6",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
   },
   "prettier": {
     "printWidth": 80,
