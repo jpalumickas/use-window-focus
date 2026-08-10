@@ -1,2 +1,9 @@
 allowBuilds:
   esbuild: false
+
+# vite is an auto-installed peer of vitest, so `pnpm update` won't bump it and
+# the lockfile pinned the vulnerable 8.0.0. vitest accepts ^6 || ^7 || ^8, so
+# forcing ^8.2.1 is in range and also lifts vite's own postcss to >=8.5.25.
+# Drop this once vitest's resolved peer moves past the advisories on its own.
+overrides:
+  vite: ^8.2.1
